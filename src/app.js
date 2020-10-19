@@ -11,4 +11,6 @@ exports.create = (req, res) => {
     res.sendStatus(201);
   };
     
-module.exports = app;
+  app.post("/artists", artistControllers.create);
+  app.get("/artists", artistControllers.list);
+  module.exports = app;
