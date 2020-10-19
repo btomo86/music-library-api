@@ -61,7 +61,6 @@ describe('with artists in the database', () => {
     });
   });
 
-});
 
 describe('GET /artists/:artistId', () => {
   it('gets artist record by id', (done) => {
@@ -88,4 +87,5 @@ describe('GET /artists/:artistId', () => {
 
 });
 
+});
 });

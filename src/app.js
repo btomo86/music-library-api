@@ -13,4 +13,5 @@ exports.create = (req, res) => {
     
   app.post("/artists", artistControllers.create);
   app.get("/artists", artistControllers.list);
+  app.get("/artists/:id", artistControllers.getArtistById)
   module.exports = app;
